@@ -21,7 +21,7 @@ mod tests {
     use super::*;
     #[test]
     fn test_construct_soundcloud_url() {
-        let fake_query = "sc";
+        let fake_query = "tv";
         assert_eq!(
             construct_tradingview_url(fake_query),
             "https://tradingview.com"
