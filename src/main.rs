@@ -18,6 +18,7 @@ fn search(key: String) -> Redirect {
     let redirect_url: String = match command {
         "tw" => utils::twitter::construct_twitter_url(&key),
         "gh" => utils::github::construct_github_url(&key),
+        "sc" => utils::soundcloud::construct_soundcloud_url(&key),
         _ => utils::google::construct_google_search_url(&key),
     };
 
