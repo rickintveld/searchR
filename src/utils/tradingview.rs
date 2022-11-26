@@ -33,7 +33,7 @@ mod tests {
         let fake_query = "tv EURUSD";
         assert_eq!(
             construct_tradingview_url(fake_query),
-            "https://www.tradingview.com/symbols/EURUSD"
+            "https://tradingview.com/symbols/EURUSD"
         );
     }
 }
