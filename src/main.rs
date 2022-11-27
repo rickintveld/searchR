@@ -13,7 +13,6 @@ fn index() -> &'static str {
 
 #[get("/search?<key>")]
 fn search(key: String) -> Redirect {
-    print!("You use command {}", key);
     let command: &str = utils::get_command_from_query_string(&key);
     let redirect_url: String = match command {
         "tw" => utils::twitter::construct_twitter_url(&key),
